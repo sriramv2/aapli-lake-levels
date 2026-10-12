@@ -1,0 +1,120 @@
+{
+  "_comment": "Static facts about Mumbai's seven supply lakes. Capacities are BMC useful storage in ML (sum = 14,47,363 ML). Build years, supply (MLD), treatment plants and areas served come from a Citizen Matters explainer and must be verified against BMC before release. Coordinates are APPROXIMATE (dam/lake area) and should be replaced with OpenStreetMap geometry.",
+  "sources": [
+    "https://citizenmatters.in/explainer-mumbai-rivers-water-sources-bmc/",
+    "https://www.mumbailakewaterlevel.in (capacities, BMC Hydraulic Engineer's Dept. figures)"
+  ],
+  "systems": {
+    "Mumbai 1": {
+      "treatment_plant": "Bhandup",
+      "serves": "Western suburbs (Dahisar Check Naka to Bandra) and the western island city (Mahim to Malabar Hill)"
+    },
+    "Mumbai 2": {
+      "treatment_plant": "Panjrapur",
+      "serves": "Eastern suburbs (Mulund Check Naka to Sion) and Sion to Mazgaon"
+    }
+  },
+  "lakes": [
+    {
+      "id": "bhatsa",
+      "name": "Bhatsa",
+      "river": "Bhatsa (with Chorana)",
+      "district": "Thane",
+      "lat": 19.50,
+      "lon": 73.40,
+      "useful_capacity_ml": 717037,
+      "built_year": 2005,
+      "built_note": "Built by the Maharashtra government at the confluence of the Bhatsa and Chorana rivers; the largest of the seven.",
+      "operator": "Maharashtra government (state)",
+      "system": "Mumbai 2",
+      "supply_mld": 2020
+    },
+    {
+      "id": "upper-vaitarna",
+      "name": "Upper Vaitarna",
+      "river": "Vaitarna and Alwandi",
+      "district": "Nashik",
+      "lat": 19.78,
+      "lon": 73.55,
+      "useful_capacity_ml": 227047,
+      "built_year": 1960,
+      "built_note": "State multipurpose scheme with dams on the Vaitarna and Alwandi rivers; water is used for power generation before release into Modak Sagar.",
+      "operator": "Maharashtra government (state)",
+      "system": "Mumbai 1",
+      "supply_mld": 640,
+      "feeds_into": "modak-sagar"
+    },
+    {
+      "id": "middle-vaitarna",
+      "name": "Middle Vaitarna",
+      "river": "Vaitarna",
+      "district": "Thane / Palghar",
+      "lat": 19.70639,
+      "lon": 73.4325,
+      "position_note": "Dam location (Wikipedia, Middle Vaitarna Dam). No reservoir outline yet: not in OpenStreetMap; India-WRIS water bodies is a candidate source.",
+      "useful_capacity_ml": 193530,
+      "built_year": 2014,
+      "built_note": "Most recent of the seven, built by BMC on the Vaitarna.",
+      "operator": "BMC",
+      "system": "Mumbai 1",
+      "supply_mld": 455
+    },
+    {
+      "id": "modak-sagar",
+      "name": "Modak Sagar (Lower Vaitarna)",
+      "river": "Vaitarna",
+      "district": "Thane",
+      "lat": 19.62,
+      "lon": 73.38,
+      "useful_capacity_ml": 128925,
+      "built_year": 1954,
+      "built_note": "Named after N. V. Modak, BMC's chief engineer at the time.",
+      "operator": "BMC",
+      "system": "Mumbai 1",
+      "supply_mld": 455
+    },
+    {
+      "id": "tansa",
+      "name": "Tansa",
+      "river": "Tansa",
+      "district": "Thane (Shahapur)",
+      "lat": 19.55,
+      "lon": 73.27,
+      "useful_capacity_ml": 145080,
+      "built_year": 1886,
+      "built_note": "Construction began in 1886 and was completed in four stages by 1945.",
+      "operator": "BMC",
+      "system": "Mumbai 1",
+      "supply_mld": 455
+    },
+    {
+      "id": "vihar",
+      "name": "Vihar",
+      "river": "Mithi (source)",
+      "district": "Mumbai (Sanjay Gandhi National Park)",
+      "lat": 19.16,
+      "lon": 72.90,
+      "useful_capacity_ml": 27698,
+      "built_year": 1860,
+      "built_note": "Dam at the source of the Mithi river; completed by 1860.",
+      "operator": "BMC",
+      "system": "Mumbai 2",
+      "supply_mld": 90
+    },
+    {
+      "id": "tulsi",
+      "name": "Tulsi",
+      "river": "Tassu",
+      "district": "Mumbai (Sanjay Gandhi National Park)",
+      "lat": 19.20,
+      "lon": 72.91,
+      "useful_capacity_ml": 8046,
+      "built_year": 1872,
+      "built_note": "Dam completed in 1872 across the Tassu river; became an independent reservoir in 1877. The smallest of the seven; overflow runs into Vihar.",
+      "operator": "BMC",
+      "system": "Mumbai 2",
+      "supply_mld": 18,
+      "feeds_into": "vihar"
+    }
+  ]
+}

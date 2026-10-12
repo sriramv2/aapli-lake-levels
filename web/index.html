@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aapli Lake Levels</title>
+  <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Aapli Lake Levels <span class="sub">Mumbai's seven supply lakes</span></h1>
+    <div id="summary" aria-live="polite"></div>
+  </header>
+  <div id="banner" hidden>Demo data: these levels are simulated, not real BMC readings.</div>
+
+  <main>
+    <div id="map" aria-label="Map of Mumbai's supply lakes"></div>
+    <aside id="panel">
+      <p class="hint">Click a lake on the map to see its level, history and the area it supplies.</p>
+    </aside>
+  </main>
+
+  <footer>
+    <label for="date">Date</label>
+    <input type="date" id="date">
+    <input type="range" id="slider" min="0" max="0" value="0" aria-label="Pick a date">
+    <button id="latest" type="button">Latest</button>
+  </footer>
+
+  <script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
